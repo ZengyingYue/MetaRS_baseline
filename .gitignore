@@ -42,3 +42,4 @@ temp/
 
 # 作者的大权重文件
 author/*.pth
+.claude/
