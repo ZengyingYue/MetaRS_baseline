@@ -136,6 +136,7 @@ EarthMiss_baseline/
 
 ## 原项目
 
+- **作者 GitHub**: [Yi-Heng/EarthMiss](https://github.com/Yi-Heng/EarthMiss)
 - EarthMiss 项目主页: https://rsidea.whu.edu.cn/EarthMiss.html
 - 原始数据集: [Zenodo](https://zenodo.org/records/17231107)
 
