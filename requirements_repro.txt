@@ -1,0 +1,26 @@
+# Reproduction environment, pinned to the locally-verified `metars` env.
+#
+# Install order (see scripts/setup_env.sh):
+#   1) torch/torchvision from the cu128 index:
+#        pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+#   2) this file:               pip install -r requirements_repro.txt
+#   3) simplecv WITHOUT deps:   pip install --no-deps \
+#        "simplecv @ git+https://github.com/Z-Zheng/SimpleCV.git@4fa67581441ad150e82b3aa2c394a921f74e4ecd"
+#      (simplecv's setup over-pins albumentations==0.4.2; we need 2.0.8, and only
+#       simplecv.module.loss is used, which does not need the old albumentations.)
+ever_beta==0.5.6
+segmentation_models_pytorch==0.5.0
+albumentations==2.0.8
+kmeans1d==0.5.0
+tifffile==2025.5.10
+scikit-image==0.25.2
+opencv-python-headless==4.13.0.92
+numpy==2.2.6
+timm==1.0.27
+einops==0.8.2
+pillow==12.2.0
+tqdm
+tensorboardX==2.6.5
+imagecodecs==2025.3.30
+
+
